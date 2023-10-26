@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script src="../js/index.js"></script>
+        <link rel="stylesheet" href="../css/fontawesome-free-web/css/all.css">
+        <link rel="stylesheet" href="../css/index.css">
+        <meta charset="UTF-8">
+    </head>
+    <header>
+        <div class="cabecalho">
+            <div class="cabecalho-logomarca">
+                <h2><a href="../index.html" class="logo">logo</a></h2>
+            </div>
+            <div class="cabecalho-busca">
+                <input type="text" class="busca" placeholder="Buscar produto...">
+            </div>
+            <div class="cabecalho-menu">
+                <a href="./login.html" class="button-login">
+                    <i class="fa-solid fa-user"></i>    
+                </a>
+                <a href="./carrinho.html" class="button-carrinho">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="../html/cadastrar_produto.html" class="button-carrinho" style="display: none;">
+                    <i class="fa-solid fa-plus"></i>
+                </a>                
+            </div>
+        </div>
+    </header>
+    <body>
+        <div class="login-form">
+            <form>
+                <h2 class="login-text">USER</h2>
+                <input type="text" id = "username" class="login-input">
+                <h2 class="login-text">SENHA</h2>
+                <div class="senha-container">
+                    <input type="password" id="password" class="login-input">
+                    <button type="button" id="toggle-senha" class="login-olho">
+                        <i class="far fa-eye fa-2x"></i> 
+                    </button>
+                </div>
+                <button class="login-entrar" onclick="login()"> ENTRAR </button>
+            </form>
+        </div>
+    </body>
+</html>

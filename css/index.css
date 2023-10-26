@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Pacifico&family=Source+Sans+3:wght@300&display=swap');
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    height: 75px;
+    background-color: rgb(0, 0, 99);
+}
+
+.cabecalho-logomarca {
+    justify-content: flex-start; 
+    margin: 6px; 
+    padding: 2px; 
+    color: white;
+
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.cabecalho-busca {
+    flex: 1; 
+    margin-left: 20px; 
+    padding: 4px;
+}
+
+.busca{
+    width: 400px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    justify-content: center;
+    width: 200px; 
+}
+
+.button-login{
+    margin-right: 15px;
+    border: 0px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.button-carrinho{
+    margin-left: 15px;
+    border: 0px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.button-login:hover{
+    cursor: pointer;
+}
+
+.button-login2:hover{
+    cursor: pointer;
+}
+
+.produtos{
+    display: flex;
+}
+
+.card {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.card img {
+    max-width: 100%; /* A imagem terá no máximo 100% da largura do elemento pai (.card) */
+    height: auto;
+}
+
+.img-hover {
+    transition: transform 0.3s; /* Adiciona uma transição suave */
+}
+
+.img-hover:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% quando o mouse passa por cima */
+}
+
+.btn-add-to-cart {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #2980b9;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+}
+
+.login-text{
+    font-family: 'Lilita One', sans-serif;
+    font-size: 60px;
+}
+
+.login-entrar{
+    font-family: 'Lilita One', sans-serif;
+    font-size: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-input{
+    width: 400px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.login-olho{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
