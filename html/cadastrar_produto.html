@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script src="../js/index.js"></script>
+        <link rel="stylesheet" href="../css/fontawesome-free-web/css/all.css">
+        <link rel="stylesheet" href="../css/cadastro-produto.css">
+        <link rel="stylesheet" href="../css/index.css">
+        <meta charset="UTF-8">
+    </head>
+    <header>
+        <div class="cabecalho">
+            <div class="cabecalho-logomarca">
+                <h2><a href="../index.html" class="logo">logo</a></h2>
+            </div>
+            <div class="cabecalho-busca">
+                <input type="text" class="busca" placeholder="Buscar produto...">
+            </div>
+            <div class="cabecalho-menu">
+                <a href="../html/login.html" class="button-login">
+                    <i class="fa-solid fa-user"></i>    
+                </a>
+                <a href="../html/carrinho.html" class="button-carrinho">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="../html/cadastrar_produto.html" class="button-add" style="display: none;">
+                    <i class="fa-solid fa-plus"></i>
+                </a>                
+            </div>
+        </div>
+    </header>
+    <body>
+        <div class="form-cadastro">
+            <form id="form-cadastro">
+                Nome do Produto: <input type="text" name="nome">
+                Preço: <input type="text" name="preco">
+                Foto (Apenas png): <input type="file" id="arquivo" name="foto">
+                <button type="button" onclick="cadastrar()">Cadastrar</button>
+            </form>
+        </div>
+        <div class="form-excluir">
+            <form id="form-excluir">
+                Nome do Produto: <input type="text" name="nome">
+                <button type="submit" onclick="excluir()">Excluir Produto</button>
+            </form>
+        </div>
+    </body>
+</html>

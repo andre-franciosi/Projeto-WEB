@@ -70,6 +70,14 @@ body, h1, h2, p, ul, li {
     text-decoration: none;
 }
 
+.button-add{
+    margin-left: 15px;
+    border: 0px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
 .button-login:hover{
     cursor: pointer;
 }
@@ -131,6 +139,9 @@ body, h1, h2, p, ul, li {
 }
 
 .login-entrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Lilita One', sans-serif;
     font-size: 40px;
     margin-top: 20px;
@@ -149,3 +160,4 @@ body, h1, h2, p, ul, li {
     background: none;
     cursor: pointer;
 }
+
