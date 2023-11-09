@@ -43,16 +43,13 @@ function limparCarrinho() {
     })
     .then(function(response) {
         if (response.ok) {
-            // Se a solicitação for bem-sucedida (carrinho foi limpo), você pode atualizar a interface do usuário.
             document.getElementById('produtos-carrinho').innerHTML = ""; // Limpa a lista de produtos no carrinho
             document.getElementById('total-carrinho').textContent = "Preço Total: R$0.00"; // Atualiza o preço total para zero
         } else {
-            // Se ocorrer um erro na solicitação, você pode tratar o erro de acordo com suas necessidades.
             console.error("Erro ao limpar o carrinho: " + response.statusText);
         }
     })
     .catch(function(error) {
-        // Trate erros de rede ou outras falhas na solicitação.
         console.error("Erro na solicitação: " + error);
     });
 }

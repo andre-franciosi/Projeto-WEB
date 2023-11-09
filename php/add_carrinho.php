@@ -4,7 +4,7 @@ $con = mysqli_connect("localhost:3306", "root", "root", "projeto_web");
 if (!$con) {
     $response = array('message' => 'Erro na conexão com o banco de dados');
 } else {
-    $data = json_decode(file_get_contents('php://input'), true); // Recebe os dados enviados em formato JSON
+    $data = json_decode(file_get_contents('php://input'), true); 
     $id_produto = $data["id_produto"];
 
     $sql = "SELECT * FROM produto WHERE id = $id_produto";
@@ -26,6 +26,6 @@ if (!$con) {
     mysqli_close($con);
 }
 
-header('Content-Type: application/json'); // Define o cabeçalho para JSON
+header('Content-Type: application/json'); 
 echo json_encode($response);
 ?>

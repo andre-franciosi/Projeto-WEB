@@ -57,15 +57,15 @@ function excluir() {
 }
 
 async function add_carrinho(id_produto) {
-    var dados = { id_produto: id_produto }; // Coloque os dados em um objeto
+    var dados = { id_produto: id_produto }; 
 
     try {
         const response = await fetch("./php/add_carrinho.php", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json", // Configura o tipo de conteúdo para JSON
+                "Content-Type": "application/json", 
             },
-            body: JSON.stringify(dados), // Converte os dados para JSON
+            body: JSON.stringify(dados), 
         });
 
         if (response.ok) {
