@@ -5,6 +5,10 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
+.logo{
+    width: 60px;
+}
+
 .cabecalho {
     display: flex;
     justify-content: space-between;
@@ -97,6 +101,7 @@ body, h1, h2, p, ul, li {
     text-align: center;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 10px;
+    font-family: 'Lilita One', sans-serif;
 }
 
 .card img {
@@ -161,3 +166,110 @@ body, h1, h2, p, ul, li {
     cursor: pointer;
 }
 
+.menu {
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    margin: 0px;
+    background-color: rgb(0, 0, 99);
+    padding: 10px;
+}
+
+i#burger{
+    margin-right: 15px;
+    border: 0px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+i#burger:hover{
+    cursor: pointer;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.carrinho{
+    font-family: 'Lilita One', sans-serif;
+    font-size: 60px; 
+}
+
+.carrinho-preco{
+    font-family: 'Lilita One', sans-serif;
+    font-size: 30px; 
+}
+
+.carrinho-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.button-limpar{
+    font-family: 'Lilita One', sans-serif;
+    border-radius: 4px;
+    font-size: 30px;
+    background-color: red;
+    color: white;
+}
+
+.button-limpar:hover{
+    cursor: pointer;
+}
+
+.button-pagamento{
+    font-family: 'Lilita One', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.formas-pagamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pagamento-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 30px; 
+}
+
+.card-pix{
+    width: 150px;
+}
+
+.img-pix{
+    width: 100%;
+}
+
+
+.card-cartao{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Lilita One', sans-serif;
+}
+
+.button-pagar{
+    font-family: 'Lilita One', sans-serif;
+    font-size: 20px; 
+    background-color: aqua;
+    color: white;
+    border-radius: 20px;
+}

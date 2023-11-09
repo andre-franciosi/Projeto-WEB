@@ -16,14 +16,21 @@ async function login() {
         console.log("Admin logado")
     }
 
-    var elementToToggle = document.querySelector('.button-add')
+}
 
-    if (elementToToggle.style.display === 'none' || elementToToggle.style.display === '') {
-        elementToToggle.style.display = 'inline'; 
+
+
+function toggleMenu() {
+    var menu = document.getElementById('menu');
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
     } else {
-        elementToToggle.style.display = 'none'; // Mude de volta para 'none' para ocultar o elemento
+        menu.style.display = 'block';
     }
 }
+
+
+
 
 async function cadastrar(){
     var form = document.getElementById('form-cadastro')
@@ -49,6 +56,31 @@ function excluir() {
     })
 }
 
+async function add_carrinho(id_produto) {
+    var dados = { id_produto: id_produto }; // Coloque os dados em um objeto
+
+    try {
+        const response = await fetch("./php/add_carrinho.php", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json", // Configura o tipo de conteúdo para JSON
+            },
+            body: JSON.stringify(dados), // Converte os dados para JSON
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data.message);
+        } else {
+            console.error("Erro ao adicionar o produto ao carrinho.");
+        }
+    } catch (error) {
+        console.error("Erro ao realizar a solicitação: " + error);
+    }
+
+    alert("Produto adicionado ao carrinho")
+}
+
 
 window.onload = async function () {
     var promise = await fetch("./php/mostrar.php", {
@@ -64,7 +96,7 @@ window.onload = async function () {
             <img class="img-hover" src="data:image/png;base64,${dados[i].imagem}" alt="Produto">
             <h3>${dados[i].nome}</h3>
             <p>Preço: R$${dados[i].preco}</p>
-            <button class="btn-add-to-cart">Adicionar ao Carrinho</button>
+            <button class="btn-add-to-cart" onclick="add_carrinho(${dados[i].id})">Adicionar ao Carrinho</button>
         </div>`;
 
         document.getElementById('produtos').innerHTML += conteudo;

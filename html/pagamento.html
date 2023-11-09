@@ -31,17 +31,30 @@
     </header>
     <body>
         <div class="carrinho-div">
-            <h2 class="carrinho">Carrinho</h2>
+            <h2 class="carrinho">Pagamento</h2>
 
             <div id="produtos-carrinho"></div>
             <div class="carrinho-preco" id="total-carrinho"></div>
-            <br>
-            <button id="limpar-carrinho" class="button-limpar">Limpar Carrinho</button>
-            <br>
-            <a href="../html/pagamento.html" class="button-pagamento">
-                <i class="fa-solid fa-money-bill-wave"></i>Finalizar Compra<i class="fa-solid fa-money-bill-wave"></i>
-            </a>
+
+            <div class="formas-pagamento">
+                <div class="card-pix">
+                    <h3 class="pagamento-texto">PIX</h3>
+                    <img class = "img-pix" src="../imgs/qrcode_82133971_16e1b45386814a39e40b4775b53b83d0.png" alt="qrcode">
+                </div>
+
+                <div class="card-cartao">
+                    <h3 class="pagamento-texto">Cartão de crédito ou débito</h3>
+                    <form>
+                        Número Cartão: <input type="number" name="num_cartao" placeholder="0000 1111 2222 3333">
+                        Nome do Titular: <input type="text" name="nome_titular" placeholder="JÓSE R SILVA">
+                        Validade <input type="date" name="validade" placeholder="12/28">
+                        CVV: <input type="number" name="cvv" placeholder="123">
+                        <button class="button-pagar">Pagar</button>
+                    </form>
+                </div>
+            </div>
         </div>
+        
 
     </body>
 </html>
