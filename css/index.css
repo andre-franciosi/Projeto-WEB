@@ -36,6 +36,8 @@ body, h1, h2, p, ul, li {
 
 .logo:hover{
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 .cabecalho-busca {
@@ -50,6 +52,7 @@ body, h1, h2, p, ul, li {
     border: 0px;
     border-radius: 5px;
     font-size: 20px;
+    padding: 10px;
 }
 
 .cabecalho-menu {
@@ -92,11 +95,13 @@ body, h1, h2, p, ul, li {
 
 .produtos{
     display: flex;
-    margin-top: 60px;
+    margin-top: 20px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
-    width: 250px;
+    width: 25%;
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
